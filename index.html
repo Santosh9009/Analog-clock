@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <style>
+      #hour {
+        --clr: linear-gradient(to bottom right, #ff41c9, #ff1919);
+        --ht: 5rem;
+        --w: 0.35rem;
+      }
+
+      #min {
+        --clr: linear-gradient(to bottom right, #00c0ff, #4218b8);
+        --ht: 7rem;
+        --w: 0.25rem;
+      }
+
+      #sec {
+        --clr: linear-gradient(to bottom right, #0100ec, #fb36f4);
+        --ht: 9rem;
+        --w: 0.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div class="first">
+      <div class="digital">
+        <span class="houring"></span>
+        <span> : </span>
+        <span class="minuting"></span>
+        <span> : </span>
+        <span class="seconding"></span>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="clock">
+        <div id="hour" class="hand"><i></i></div>
+        <div id="min" class="hand"><i></i></div>
+        <div id="sec" class="hand"><i></i></div>
+        <span style="--i: 1"><b>|</b></span>
+        <span style="--i: 2"><b>|</b></span>
+        <span style="--i: 3"><b class="three">3</b></span>
+        <span style="--i: 4"><b>|</b></span>
+        <span style="--i: 5"><b>|</b></span>
+        <span style="--i: 6"><b class="three">6</b></span>
+        <span style="--i: 7"><b>|</b></span>
+        <span style="--i: 8"><b>|</b></span>
+        <span style="--i: 9"><b class="three">9</b></span>
+        <span style="--i: 10"><b>|</b></span>
+        <span style="--i: 11"><b>|</b></span>
+        <span style="--i: 12"><b class="three">12</b></span>
+      </div>
+    </div>
+  </body>
+</html>
